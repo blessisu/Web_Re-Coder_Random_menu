@@ -28,13 +28,14 @@
 
 <!-- 만약 음식 사진으로 넣고싶으면 dictionary로 이름:사진 만들어서 이름key일경우 사진 출력으로 바꾸면될듯. -->
 <div class="card" style="width: 18rem;">
-  <img src="../static/images/fried_chicken.png" class="card-img-top" alt="...">
+  <!-- <img src="../static/images/fried_chicken.png" class="card-img-top" alt="..."> -->
+  <img src="{{ random_menu_photo }}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Random Menu Choice</h5>
     <p class="card-text">
       오늘의 저녁은 {{ random_menu }} 어떠세요?
     </p>
-    <a href="#" class="btn btn-danger" id="random_menu">이거 말고</a>
+    <a href="service.html" class="btn btn-danger" id="random_menu">이거 말고</a>
     <a href="home.html" class="btn btn-outline-success">고마워요</a>
   </div>
 </div>
